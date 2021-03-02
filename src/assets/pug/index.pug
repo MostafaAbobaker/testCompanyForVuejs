@@ -1,0 +1,240 @@
+doctype html
+html(lang="en")
+  head
+    include includes/head.pug
+  body 
+    include includes/header.pug
+    //start Slide
+    section.main-slider 
+      #carouselExampleCaptions.carousel.slide(data-ride='carousel')
+        ol.carousel-indicators
+          li.active(data-target='#carouselExampleCaptions', data-slide-to='0')
+          li(data-target='#carouselExampleCaptions', data-slide-to='1')
+          li(data-target='#carouselExampleCaptions', data-slide-to='2')
+        .carousel-inner
+          .carousel-item.active
+            img.d-block.w-100(src='assets/imgs/Rectangle 2.png', alt='...')
+            .carousel-caption
+              .box-info
+                h5(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100") We are growing fast do you see.
+                p(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100") Preserved defective offending he daughters on or. Rejoiced prospect yet material servants out answered men admitted. Sportsmen certainty prevailed suspected am as. Add stairs admire all answer the nearer yet length. 
+                a(class=" wow animate__fadeInUp btn-more" data-wow-duration="2s" data-wow-offset="100" href="" ) Learn more
+          .carousel-item
+            img.d-block.w-100(src='assets/imgs/slide2.png', alt='...')
+            .carousel-caption
+              .box-info
+                h5(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100") We are growing fast do you see.
+                p(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100") Preserved defective offending he daughters on or. Rejoiced prospect yet material servants out answered men admitted. Sportsmen certainty prevailed suspected am as. Add stairs admire all answer the nearer yet length. 
+                a(class=" wow animate__fadeInUp btn-more" data-wow-duration="2s" data-wow-offset="100" href="" ) Learn more
+          .carousel-item
+            img.d-block.w-100(src='assets/imgs/Rectangle 2.png', alt='...')
+            .carousel-caption
+              .box-info
+                h5(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100") We are growing fast do you see.
+                p(class=" wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100") Preserved defective offending he daughters on or. Rejoiced prospect yet material servants out answered men admitted. Sportsmen certainty prevailed suspected am as. Add stairs admire all answer the nearer yet length. 
+                a(class=" wow animate__fadeInUp btn-more" data-wow-duration="2s" data-wow-offset="100" href="" ) Learn more
+        a.carousel-control-prev(href='#carouselExampleCaptions', role='button', data-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true') 
+            i.fas.fa-angle-up
+          span.sr-only Previous
+        a.carousel-control-next(href='#carouselExampleCaptions', role='button', data-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+            i.fas.fa-angle-down
+          span.sr-only Next
+
+    //End Slide
+    //Start Our Services 
+    section.Our-Services
+      .container.text-center 
+        h2.text-center Our Services
+        .row 
+          .col-lg-4 
+            div(class="card wow animate__fadeInRight" data-wow-duration="2s" data-wow-offset="100")
+              .image 
+                include hospitals.svg
+              .card-body 
+                h5.title  Service one
+                p.info Preserved defective offending he daughters on or. Rejoiced prospect yet material servants out answered men admitted. 
+          .col-lg-4 
+            div(class="card wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100")
+              .image 
+                include tooth.svg
+              .card-body 
+                h5.title  Service one
+                p.info Preserved defective offending he daughters on or. Rejoiced prospect yet material servants out answered men admitted. 
+          .col-lg-4 
+            div(class="card wow animate__fadeInLeft" data-wow-duration="2s" data-wow-offset="100")
+              .image 
+                include hospital.svg
+              .card-body 
+                h5.title  Service one
+                p.info Preserved defective offending he daughters on or. Rejoiced prospect yet material servants out answered men admitted. 
+        a.btn-more(href="")  VIEW ALL SERVICES 
+    //End Our Services 
+    //Start Over View
+    section.overview 
+      .container 
+        .row 
+          .col-lg-12 
+            .overview-info
+              h2.text-center OverView 
+              p(class="text-center wow animate__flipInX" data-wow-duration="2s" data-wow-offset="100") Andalusia is one of the leading regional players in the healthcare provision space in the Middle East. With a network of general hospitals, specialized medical centers, and polyclinics across Egypt and Saudi Arabia, Andalusia has built a unique footprint both in service spectrum and geographically. Andalusia Group for Medical Services was founded in 1984 by the entrepreneur Dr. Darweesh Zagzoug as a single hospital in Jeddah, Saudi Arabia; and grown over 30 years to own and manage several healthcare facilities in both Saudi and Egypt. The second generation family owner Dr. Hazem Zagzoug, the current CEO has made it possible for a renowned financial institution like the IFC to join forces to serve more than 7 million patients in the last 10 years with amicable quality, and creating 2000 new jobs. We are proud of our origin, our progress, as well as our partners. 
+    //End Over View
+    //Start Our Team
+    section.our-team 
+      h2.text-center Executives Officers
+      .container 
+        .row 
+          .col-lg-6
+            div(class="card wow animate__fadeInRight" id="mater-card" data-wow-duration="2s" data-wow-offset="100")
+              .image
+                img.w-100(src="assets/imgs/team1.png", alt="")
+              .card-body 
+                h4.heading Hazem Darwiesh
+                small.title Chief Executive Officer
+                p Calling nothing end fertile for venture way boy, Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed.
+                .social-media
+                  ul.list-unstyled 
+                    li.list-item 
+                      a.link-item(href="") 
+                        i.fab.fa-facebook-f.fa-fw
+                    li.list-item 
+                      a.link-item(href="") 
+                        i.fab.fa-twitter.fa-fw
+                    li.list-item 
+                      a.link-item(href="") 
+                        i.fab.fa-linkedin-in.fa-fw
+                    li.list-item 
+                      a.link-item(href="") 
+                        i.fab.fa-pinterest.fa-fw
+          .col-lg-6 
+            .row
+              .col-lg-6
+                div(class=" card card-left text-center wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100")
+                  .image
+                    img.w-100(src="assets/imgs/team5.png", alt="", data-src="assets/imgs/team55.png")
+                  .card-body 
+                    h5.heading Dr. Alaa AlGoweini
+                    small.title
+              .col-lg-6
+                div(class=" card card-left text-center wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100")
+                  .image
+                    img.w-100(src="assets/imgs/team4.png", alt="", data-src="assets/imgs/team44.png")
+                  .card-body 
+                    h5.heading Dr. Walaa Kadry
+                    small.title
+              .col-lg-6
+                div(class=" card card-left text-center wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100")
+                  .image
+                    img.w-100(src="assets/imgs/team3.png", alt="", data-src="assets/imgs/team33.png")
+                  .card-body 
+                    h5.heading Mr. AbdelHakim GamalElDin
+                    small.title Chief Executive Officer
+              .col-lg-6
+                div(class=" card card-left text-center wow animate__fadeInUp" data-wow-duration="2s" data-wow-offset="100")
+                  .image
+                    img.w-100(src="assets/imgs/team2.png", alt="", data-src="assets/imgs/team1.png")
+                  .card-body 
+                    h5.heading Hazem Darwiesh
+                    small.title Chief Executive Officer      
+              
+              
+            
+    //End Our Team
+    //Start statistics
+    section.statistics
+      h2.text-center statistics
+      .container 
+        .row 
+          .col-lg-3   
+            div(class=" card text-center wow animate__zoomIn" data-wow-duration="2s" data-wow-offset="100")
+              .image 
+                i.fas.fa-walking.fa-fw.fa-3x
+              .card-body 
+                h4.heading.count  3,21570
+                p Clients Serviced
+          .col-lg-3   
+            div(class=" card text-center wow animate__zoomIn" data-wow-duration="2s" data-wow-offset="100")
+              .image 
+                i.fas.fa-cog.fa-fw.fa-3x
+              .card-body 
+                h4.heading.count  5140
+                p Machienes
+          .col-lg-3   
+            div(class=" card text-center wow animate__zoomIn" data-wow-duration="2s" data-wow-offset="100")
+              .image 
+                i.fas.fa-user-friends.fa-fw.fa-3x
+              .card-body 
+                h4.heading.count  61473
+                p Qulified Staff
+          .col-lg-3   
+            div(class=" card text-center wow animate__zoomIn" data-wow-duration="2s" data-wow-offset="100")
+              .image 
+                i.fas.fa-map-marker-alt.fa-fw.fa-3x
+              .card-body 
+                h4.heading.count  126
+                p Sites
+
+    //End statistics
+    //Start News
+    section.News 
+      h2.text-center RECENT NEWS
+      .container 
+        .row 
+          .col-lg-4 
+            div(class=" card text-center wow animate__flipInX" data-wow-duration="2s" data-wow-offset="100") 
+              .image 
+                img.w-100(src="assets/imgs/blog1.png", alt="")
+              .card-body 
+                h5.heading How to Improve Your Sales Volume
+                small.date 23 AUG, 2018
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod teminc ididunt ut labore et dolore.
+                a.btn-more(href="")  Read more
+          .col-lg-4 
+            div(class=" card text-center wow animate__flipInX" data-wow-duration="2s" data-wow-offset="100") 
+              .image 
+                img.w-100(src="assets/imgs/blog2.png", alt="")
+              .card-body 
+                h5.heading How to Improve Your Sales Volume
+                small.date 23 AUG, 2018
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod teminc ididunt ut labore et dolore.
+                a.btn-more(href="")  Read more
+          .col-lg-4 
+            div(class=" card text-center wow animate__flipInX" data-wow-duration="2s" data-wow-offset="100") 
+              .image 
+                img.w-100(src="assets/imgs/blog3.png", alt="")
+              .card-body 
+                h5.heading How to Improve Your Sales Volume
+                small.date 23 AUG, 2018
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod teminc ididunt ut labore et dolore.
+                a.btn-more(href="")  Read more
+    //End News
+    //Start  partners
+    section.partners
+      h2.text-center GREAT partners
+      .container 
+        .owl-carousel
+          div  
+            img.w-100(src="assets/imgs/partners1.png", alt="")
+          div  
+            img.w-100(src="assets/imgs/partners2.png", alt="")
+          div  
+            img.w-100(src="assets/imgs/partners3.png", alt="")
+          div  
+            img.w-100(src="assets/imgs/partners4.png", alt="")
+          div  
+            img.w-100(src="assets/imgs/partners5.png", alt="")
+          div  
+            img.w-100(src="assets/imgs/partners3.png", alt="")
+          div  
+            img.w-100(src="assets/imgs/partners1.png", alt="")
+
+
+
+    //End  partners
+
+    include includes/footer.pug
+    
+    include includes/script.pug
+    script#viewmobilscript.
+      new WOW().init();

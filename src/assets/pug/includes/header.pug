@@ -1,0 +1,48 @@
+//Start Nav Bar
+nav.navbar.navbar-expand-lg.navbar-light.sticky-top
+  .container
+    a.navbar-brand(href='index.html') 
+      img(src="assets/imgs/logo.png", alt="logo")
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.ml-auto
+        li.nav-item.active
+          a.nav-link(href='#')
+            | Home 
+            span.sr-only (current)
+        
+        li.nav-item.drop
+          a#navbarDropdown.nav-link
+            | About us
+          .dropdown-menu(aria-labelledby='navbarDropdown')
+            a.dropdown-item(href='#') Our Company
+            a.dropdown-item(href='#') Partners & Accreditations
+            a.dropdown-item(href='#') Corporate Structure
+        li.nav-item
+            a.nav-link(href='#') Business Units  
+        li.nav-item
+            a.nav-link(href='#') Projects
+        li.nav-item
+            a.nav-link(href='#') Partners
+        li.nav-item
+            a.nav-link(href='#') Media&Events
+        li.nav-item
+            a.nav-link(href='#') Contacts
+        li.nav-item
+            a.nav-link(href='#') Careers
+        li.nav-item.search
+            a.nav-link(href='#') 
+              i.fas.fa-search.fa-fw.fa-lg
+            .search-box 
+              .input-group.mb-3
+                input.form-control(type='search', placeholder="Search")
+                .input-group-append
+                  span#basic-addon2.input-group-text 
+                    i.fas.fa-search
+        li.nav-item.lang
+            a.nav-link(href='#') 
+              img(src="assets/imgs/lang.png", alt="Lang")
+
+      
+//End Nav Bar
